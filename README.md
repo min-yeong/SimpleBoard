@@ -41,7 +41,8 @@ MySQL Workbench 8.0 CE
 
 ## 코드 설명
 
-dbcomm.php
+dbconn.php 
+- PHP와 MySQL의 DB 연동, 받아 온 DB 테이블 문자 인코딩 후, $db에 저장 
 ```
 <?php
 	$db = new mysqli('localhost', 'root', 'mylee1', 'testdb');
