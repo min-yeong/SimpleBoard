@@ -42,16 +42,36 @@ MySQL Workbench 8.0 CE
 ## 코드 설명
 
 dbconn.php 
-- PHP와 MySQL의 DB 연동, 받아 온 DB 테이블 문자 인코딩 후, $db에 저장 
+- PHP와 MySQL의 DB 연동
 ```
 <?php
 	$db = new mysqli('localhost', 'root', 'mylee1', 'testdb');
 	if($db->connect_error) {
-	die('데이터베이스 연결에 문제가 있습니다.\n관리자에게 문의 바랍니다.
+	die('데이터베이스 연결에 문제가 있습니다.\n관리자에게 문의 바랍니다. // 연결 오류 시
 	}
-	$db->set_charset('utf8');
+	$db->set_charset('utf8'); //DB 테이블 문자 인코딩 후, $db에 저장 
 ?>
 ```
 
+test.php
+- db 연동 하는 외부 파일 dbconn.php 실행
+```
+<?php
+    require_once("C:/xampp/htdocs/test/dbconn.php"); //같은 파일 한 번만 포함, 포함할 파일 없으면 다음 코드 실행 안함 
+?>
+```
 
+- 쿼리 실행 후, 데이터 값 가져오기 
+```
+<?php
+	$sql = 'select * from testdb order by Usernumber desc'; //Username이 내림차순으로 출력
+	$result = $db->query($sql);
 
+	while($row = $result->fetch_assoc())	{ //레코드 값이 없을 때 까지 하나씩 가져옴 
+?>
+```
+
+- 테이블 $row 내의 해당 row 변수 깂을 가져와 HTML 형식으로  
+```
+<?php echo $row['테이블 내의 row 변수']?>
+```
