@@ -76,7 +76,7 @@ test.php
 ?>
 ```
 
-- 테이블 $row 내의 해당 row 변수 깂을 가져와 HTML 형식으로 변환 
+- 테이블 $row 내의 해당 row 변수 을 가져와 HTML 형식으로 변환 
 ```
 <?php echo $row['테이블 내의 row 변수']?>
 ```
