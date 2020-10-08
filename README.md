@@ -1,6 +1,7 @@
 # SimpleBoard
 
 ## 개발 환경 구축
+
 XAMPP (X : 크로스 플랫폼, A : 아파치 웹 서버, M : MariaDB(MySQL), PHP, Perl)
 -> Apache(웹 서버) + MySQL(Database) + PHP(서버 프로그램 언어) 가 한번에 묶여있는 소프트웨어
 
@@ -39,8 +40,9 @@ MySQL Workbench 8.0 CE
 - $cfg['Servers'][$i]['password'] = '유저비밀번호';
 
 ## 코드 설명
+
 dbcomm.php
-'''
+```
 <?php
 	$db = new mysqli('localhost', 'root', 'mylee1', 'testdb');
 	if($db->connect_error) {
@@ -48,7 +50,7 @@ dbcomm.php
 	}
 	$db->set_charset('utf8');
 ?>
-'''
+```
 
 
 
