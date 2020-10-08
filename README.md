@@ -4,9 +4,13 @@
 XAMPP (X : 크로스 플랫폼, A : 아파치 웹 서버, M : MariaDB(MySQL), PHP, Perl)
 -> Apache(웹 서버) + MySQL(Database) + PHP(서버 프로그램 언어) 가 한번에 묶여있는 소프트웨어
 
-Visual Studio Code
+Visual Studio Code 
+-> 소스 코드 편집기, 디버깅 지원 및 다양한 프로그래밍 언어 지원 
 
 MySQL Workbench 8.0 CE
+-> SQL 개발과 관리, 데이터베이스 설계, 생성 그리고 유지를 위한 단일 개발 통합 환경을 제공하는 비주얼 데이터베이스 설계 도구
+
+개발 환경 구축 순서
 
 1. XAMPP 다운로드 
 2. 설치 후, Control Panel를 실행하여 Apache와 MySQL 정상적인 작동 확인 (각 포트 번호 확인)
@@ -34,3 +38,5 @@ MySQL Workbench 8.0 CE
 
 - $cfg['Servers'][$i]['user'] = '유저이름';
 - $cfg['Servers'][$i]['password'] = '유저비밀번호';
+
+
