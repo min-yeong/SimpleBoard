@@ -1,12 +1,12 @@
 # SimpleBoard
 
-# 개발 환경 구축
-## XAMPP (X : 크로스 플랫폼, A : 아파치 웹 서버, M : MariaDB(MySQL), PHP, Perl)
+## 개발 환경 구축
+XAMPP (X : 크로스 플랫폼, A : 아파치 웹 서버, M : MariaDB(MySQL), PHP, Perl)
 -> Apache(웹 서버) + MySQL(Database) + PHP(서버 프로그램 언어) 가 한번에 묶여있는 소프트웨어
 
-## Visual Studio Code
+Visual Studio Code
 
-## MySQL Workbench 8.0 CE
+MySQL Workbench 8.0 CE
 
 1. XAMPP 다운로드 
 2. 설치 후, Control Panel를 실행하여 Apache와 MySQL 정상적인 작동 확인(각 포트 번호 확인)
