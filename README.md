@@ -16,37 +16,39 @@ MySQL Workbench 8.0 CE
 3. http://localhost/ 접속하여 정상적으로 작동하는 지 확인
 4. PHP 환경 설정 -> ...\xampp\php\php.ini 파일 접속 후 해당 사항 변경하기 (문자 인코딩, 시간대 설정)
 
-	- ;default_charset="UTF-8" -> default_charset="UTF-8"
-	- ;extension=php_fileinfo.dll -> extension=php_fileinfo.dll
-	- date.timezone=Europe/Berlin -> date.timezone=Asia/Seoul
-	- ;mbstring.language=Korean -> mbstring.language=Korean
-	- ;mbstring.internal_encoding=EUC-kr -> mbstring.internal_encoding=UTF-8
+- ;default_charset="UTF-8" -> default_charset="UTF-8"
+- ;extension=php_fileinfo.dll -> extension=php_fileinfo.dll
+- date.timezone=Europe/Berlin -> date.timezone=Asia/Seoul
+- ;mbstring.language=Korean -> mbstring.language=Korean
+- ;mbstring.internal_encoding=EUC-kr -> mbstring.internal_encoding=UTF-8
 
 5. MySQL 환경 설정 -> 내 PC의 고급 시스템 변경에서 시스템 환경 변수 PATH 추가
 
-	- C:\xampp\mysql\bin\ (MySQL의 bin 폴더 경로)
+- C:\xampp\mysql\bin\ (MySQL의 bin 폴더 경로)
 
 6. cmd 접속 후, MySQL 접속해 비밀번호 설정하기
 
-	- cd (MySQL의 bin 폴더 경로)
-	- use mysql;
-	- UPDATE user SET password = PASSWORD('비밀번호입력') where user = 'root';
-	- FLUSH PRIVILEGES;
+- cd (MySQL의 bin 폴더 경로)
+- use mysql;
+- UPDATE user SET password = PASSWORD('비밀번호입력') where user = 'root';
+- FLUSH PRIVILEGES;
 
 7. phpMyAdmin 에서도 변경사항 추가, my.ini 파일에서 변경
 
-	- $cfg['Servers'][$i]['user'] = '유저이름';
-	- $cfg['Servers'][$i]['password'] = '유저비밀번호';
+- $cfg['Servers'][$i]['user'] = '유저이름';
+- $cfg['Servers'][$i]['password'] = '유저비밀번호';
 
 ## 코드 설명
 dbcomm.php
-	  <?php
-	    $db = new mysqli('localhost', 'root', 'mylee1', 'testdb');
-		  if($db->connect_error) {
-			  die('데이터베이스 연결에 문제가 있습니다.\n관리자에게 문의 바랍니다.');
-		  }
-		  $db->set_charset('utf8');
-	  ?>
+'''
+<?php
+	$db = new mysqli('localhost', 'root', 'mylee1', 'testdb');
+	if($db->connect_error) {
+	die('데이터베이스 연결에 문제가 있습니다.\n관리자에게 문의 바랍니다.
+	}
+	$db->set_charset('utf8');
+?>
+'''
 
 
 
