@@ -58,7 +58,7 @@ dbconn.php
 	if($db->connect_error) {
 	die('데이터베이스 연결에 문제가 있습니다.\n관리자에게 문의 바랍니다. // 연결 오류 시
 	}
-	$db->set_charset('utf8'); //DB 테이블 문자 인코딩 후, $db에 저장 
+	$db->set_charset('utf8'); //$db에 저장된 테이블 문자 인코딩
 ?>
 ```
 
