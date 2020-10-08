@@ -9,9 +9,9 @@ Visual Studio Code
 MySQL Workbench 8.0 CE
 
 1. XAMPP 다운로드 
-2. 설치 후, Control Panel를 실행하여 Apache와 MySQL 정상적인 작동 확인(각 포트 번호 확인)
+2. 설치 후, Control Panel를 실행하여 Apache와 MySQL 정상적인 작동 확인 (각 포트 번호 확인)
 3. http://localhost/ 접속하여 정상적으로 작동하는 지 확인
-4. ...\xampp\php\php.ini 파일 접속 후 해당 사항 변경하기 -> 문자 인코딩, 시간대 설정
+4. PHP 환경 설정 -> ...\xampp\php\php.ini 파일 접속 후 해당 사항 변경하기 (문자 인코딩, 시간대 설정)
 
 - ;default_charset="UTF-8" -> default_charset="UTF-8"
 - ;extension=php_fileinfo.dll -> extension=php_fileinfo.dll
@@ -19,5 +19,18 @@ MySQL Workbench 8.0 CE
 - ;mbstring.language=Korean -> mbstring.language=Korean
 - ;mbstring.internal_encoding=EUC-kr -> mbstring.internal_encoding=UTF-8
 
-5. mysql 비밀번호 설정
-cmd 접속 후 
+5. MySQL 환경 설정 -> 내 PC의 고급 시스템 변경에서 시스템 환경 변수 PATH 추가
+
+- C:\xampp\mysql\bin\
+
+6. cmd 접속 후, MySQL 접속해 비밀번호 설정하기
+
+- cd (MySQL의 bin 폴더 경로)
+- use mysql;
+- UPDATE user SET password = PASSWORD('비밀번호입력') where user = 'root';
+- FLUSH PRIVILEGES;
+
+7. phpMyAdmin 에서도 변경사항 추가, my.ini 파일에서 변경
+
+- $cfg['Servers'][$i]['user'] = '유저이름';
+- $cfg['Servers'][$i]['password'] = '유저비밀번호';
