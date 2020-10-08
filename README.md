@@ -3,7 +3,7 @@
 ## 개발 환경 구축
 
 XAMPP (X : 크로스 플랫폼, A : 아파치 웹 서버, M : MariaDB(MySQL), PHP, Perl)
--> Apache(웹 서버) + MySQL(Database) + PHP(서버 프로그램 언어) 가 한번에 묶여있는 소프트웨어
+-> Apache(웹 서버) + MySQL(Database) + PHP(서버 프로그램 언어) 가 한 번에 묶여있는 소프트웨어
 
 Visual Studio Code 
 -> 소스 코드 편집기, 디버깅 지원 및 다양한 프로그래밍 언어 지원 
@@ -75,3 +75,51 @@ test.php
 ```
 <?php echo $row['테이블 내의 row 변수']?>
 ```
+
+testDB.sql
+- 테이블 생성
+```
+create table testDB (
+   Usernumber Int PRIMARY KEY AUTO_INCREMENT,
+   title varchar(100) not null,
+    location varchar(30) not null,
+    Username varchar(30) not null,
+    id varchar(30) not null,
+    date datetime,
+    hit Int Not null default '0'
+);
+```
+
+- 데이터 입력
+```
+insert into testdb (title, location, Username, id, date)
+values 
+('푸드밸런스에서 쥬비스전지점 vip고객분들에게 선날 선물을 보내드립니다.!!', '쥬비스푸드', '조현호', 'fd3936', now()),
+('2016.1.17 대표이사 공지사항입니다', '본사', '대표이사', 'juvis-main', now()),
+('2017 승진 합격 기준', '본사', '양소영', 'sayyang', now()),
+('[연말정산] 2016년 연말정산 서류 제출 안내 - 2월 10일까지', '본사', '김혜림', ' snb123', now()),
+('푸드밸런스 전체 휴무 관련', '쥬비스푸드', '조현호', 'fd3936', now()),
+('지점푸드 주문방법 및 주문일자 관련 공지', '쥬비스푸드', '조현호', 'fd3936', now()),
+('2017.02월 웰컴차(고객상담용 차) 주문안내', '쥬비스푸드', '정현주', 'junghj', now()),
+('8월 휴가기간 내 지점푸드 배송관련 공지', '본사', '민찬호', 'chhmin', now()),
+('2018.6.21 총괄대표 공지입니다.', '본사', '대표이사', 'juvis-main', now()),
+('2018년 6월 25일 총괄대표 공지입니다.', '본사', '대표이사', 'juvis-main', now());
+```
+
+## 기술적 설명
+웹서비스 
+- 네트워크 상에서 서로 다른 종류의 컴퓨터들 간에 상호작용을 위한 소프트웨어 시스템 
+HTTP 
+- Hyper Text Transfer Protocol, 웹 브라우저와 웹 서버가 데이터를 주고 받을 때 사용하는 일종의 규칙
+HTML/CSS
+- Hyper Text Markup Language, 웹 페이지를 생성 및 구성을 위한 언어
+PHP 
+- 동적인 웹 사이트 개발을 위한 언어 
+- 서버 측에서 실행되는 서버 사이드 스크립트 언어로 HTML/CSS 코드 안에 추가하여 사용  
+JavaScript
+- 동적인 객체 기반의 스크립트 언어, 웹의 동작을 구현
+JQuery
+- HTML 클라이언트 사이드 조작을 단순화 한 자바스크립트 라이브러리
+MySQL 
+- 오픈 소스의 관계형 데이터베이스(정해진 규격, 관리) 관리 시스템
+- 다양한 운영처제, 여러 가지의 언어와 호환 
