@@ -94,13 +94,13 @@ testDB.sql
 - 테이블 생성 
 ```
 create table testDB (
-   Usernumber Int PRIMARY KEY AUTO_INCREMENT,
+   usernumber int primary key auto_increment,
    title varchar(100) not null,
-    location varchar(30) not null,
-    Username varchar(30) not null,
-    id varchar(30) not null,
-    date datetime,
-    hit Int Not null default '0'
+   location varchar(30) not null,
+   username varchar(30) not null,
+   id varchar(30) not null,
+   date datetime,
+   hit int not null default '0'
 );
 ```
 > PK를 AUTO_INCREMENT로 사용한 이유 -> 데이터베이스의 성능 최적화
@@ -109,7 +109,7 @@ create table testDB (
 
 - 데이터 입력
 ```
-insert into testdb (title, location, Username, id, date)
+insert into testdb (title, location, username, id, date)
 values 
 ('푸드밸런스에서 쥬비스전지점 vip고객분들에게 선날 선물을 보내드립니다.!!', '쥬비스푸드', '조현호', 'fd3936', now()),
 ('2016.1.17 대표이사 공지사항입니다', '본사', '대표이사', 'juvis-main', now()),
