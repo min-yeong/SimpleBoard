@@ -167,4 +167,4 @@ DNS (Domain Name Server)
 localhost
 - 컴퓨터 네트워크에서 사용하는 호스트 명, 자신의 컴퓨터를 의미함
 
-![Alt text](C:\Users\JUVIS_LMY\Desktop\캡처.jpg)
+<img src="C:/Users/JUVIS_LMY/Desktop/캡처.PNG" width="450px" height="300px"></img><br/>
