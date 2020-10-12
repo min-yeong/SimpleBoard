@@ -172,3 +172,5 @@ localhost
 - 컴퓨터 네트워크에서 사용하는 루프백 호스트 명, 자신의 컴퓨터를 의미함
 - 루프백 : 가상 루프백 인터페이스(자기 자신을 가리키기 위한 목적으로 쓰기 위해 예약된 IP주소) 
 
+https://medium.com/@mikesparr/how-web-applications-work-3824f4b7ebeb - 잘못된 점 찾기
+- DNS서버에서 찾은 IP주소에 해당하는 포트번호로 웹 서버에 접속해야 한다. 
