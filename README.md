@@ -103,10 +103,9 @@ create table testDB (
     hit Int Not null default '0'
 );
 ```
-- PK를 AUTO_INCREMENT로 사용한 이유 
+> PK를 AUTO_INCREMENT로 사용한 이유 -> 데이터베이스의 성능 최적화
 1. Insert 시 재정렬이 필요 없음 
 2. 데이터 낭비가 준다 
--> 데이터베이스의 성능을 최적화시켜줌 
 
 - 데이터 입력
 ```
