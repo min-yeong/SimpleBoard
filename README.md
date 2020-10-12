@@ -41,10 +41,8 @@ MySQL Workbench 8.0 CE
 - use mysql;
 - UPDATE user SET password = PASSWORD('비밀번호입력') where user = 'root';
 - FLUSH PRIVILEGES;
-> INSERT, DELETE, UPDATE를 통해 사용자에 대한 변경 사항등을 수행했을 때, 즉시 반영
+> FLUSH PRIVILEGES : INSERT, DELETE, UPDATE를 통해 사용자에 대한 변경 사항, MySQL의 환경설정을 변경한 경우, 재시작 없이 즉시 반영
 바로 GRANT 명령어를 사용하면 실행 필요 X
-MySQL의 환경설정을 변경한 경우, 재시작 없이 즉시 적용 시키자 했을 때 
-
 
 7. phpMyAdmin 에서도 변경사항 추가, my.ini 파일에서 변경
 
