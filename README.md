@@ -150,6 +150,10 @@ MySQL
 
 ## etc..
 
+웹 서비스 동작 과정 
+
+<img width="936" alt="캡처" src="https://user-images.githubusercontent.com/58197075/95726449-ea07ef80-0cb3-11eb-80a7-3f33ba6476ab.PNG">
+
 정적 웹 페이지
 - 서버에 미리 저장된 파일이 그대로 전달되는 웹 페이지
 - 서버는 사용자가 요청에 해당하는 저장된 웹 페이지를 보냄 
@@ -167,5 +171,3 @@ DNS (Domain Name Server)
 localhost
 - 컴퓨터 네트워크에서 사용하는 호스트 명, 자신의 컴퓨터를 의미함
 
-웹 서비스 동작 과정 
-<img width="936" alt="캡처" src="https://user-images.githubusercontent.com/58197075/95726449-ea07ef80-0cb3-11eb-80a7-3f33ba6476ab.PNG">
