@@ -4,7 +4,7 @@
 
 XAMPP (X : 크로스 플랫폼, A : 아파치 웹 서버, M : MySQL, PHP, Perl)
 
-- Apache(웹 서버) + MySQL(Database) + PHP(서버 프로그램 언어) 가 한 번에 묶여있는 소프트웨어
+- Apache(웹 서버) + MySQL(Database) + PHP(서버 프로그램 언어) 가 한 번에 묶여있는 소프트웨어 </br>
 
 
 Visual Studio Code 
