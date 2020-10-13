@@ -144,6 +144,7 @@ MySQL
 <img width="936" alt="캡처" src="https://user-images.githubusercontent.com/58197075/95726449-ea07ef80-0cb3-11eb-80a7-3f33ba6476ab.PNG">
 
 https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html
+
 https://medium.com/@mikesparr/how-web-applications-work-3824f4b7ebeb - 잘못된 점 찾기
 - DNS서버에서 찾은 IP주소에 해당하는 포트번호로 웹 서버에 접속해야 한다. 
 
