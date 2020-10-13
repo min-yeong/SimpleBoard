@@ -143,7 +143,7 @@ HTML/CSS
 >> <시작태그> 요소(Element) </종류태그>
 
 > 속성(Attribute) : 추가적인 정보나 명령을 받을 수 있게 정보를 전달 
->> <img src = "html.png"> : scr(속성명), html() 
+>> <img scr(속성명) = "html.png"(속성값)>
 
 > HTML, CSS 분리의 장점 
 >> 태그로 Style 속성을 주기 때문에 유지보수, 가독성이 증가
