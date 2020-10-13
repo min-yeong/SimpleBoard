@@ -30,11 +30,11 @@ MySQL Workbench 8.0 CE
 6. cmd 접속 후, MySQL 접속해 비밀번호 설정하기
 
 - cd (MySQL의 bin 폴더 경로)
-- mysql -u root -p
+- mysql -u root -p > (MySQL 비밀번호 입력)
 - use mysql;
 - UPDATE user SET password = PASSWORD('비밀번호입력') where user = 'root';
 - FLUSH PRIVILEGES;
-> FLUSH PRIVILEGES : INSERT, DELETE, UPDATE를 통해 사용자에 대한 변경 사항, MySQL의 환경설정을 변경한 경우, 재시작 없이 즉시 반영
+> FLUSH PRIVILEGES : INSERT, DELETE, UPDATE를 통해 "사용자"에 대한 변경 사항, MySQL의 환경설정을 변경한 경우, 재시작 없이 즉시 반영
 바로 GRANT 명령어를 사용하면 실행 필요 X
 
 7. phpMyAdmin 에서도 변경사항 추가, my.ini 파일에서 변경
@@ -93,8 +93,8 @@ create table testDB (
 );
 ```
 > PK를 AUTO_INCREMENT로 사용한 이유 -> 데이터베이스의 성능 최적화
->>1. Insert 시 재정렬이 필요 없음 
->>2. 데이터 낭비가 준다 
+>> Insert 시 재정렬이 필요 없음 
+>> 데이터 낭비가 준다 
 
 - 데이터 입력
 ```
@@ -126,6 +126,25 @@ HTTP
 
 HTML/CSS
 - Hyper Text Markup Language(태그를 이용한 기본 구조), Cascading Style Sheets(사용자에게 보여지는 화면 구성), 웹 페이지를 생성 및 구성을 위한 언어
+- Markup Language : 태그 등을 이용하여 문서나 데이터의 구조를 명기하는 언어
+- HTML 의 기본 구조 : 머리글(Heading)과 본문(Body)
+```
+<HTML>
+ <HEAD>
+  <TITLE>이곳은 타이틀, 제목</TITLE>  
+  </HEAD>
+
+ <BODY>
+  이곳은 몸체, 본문
+ </BODY>
+</HTML>
+```
+> 요소(Element)
+>> <시작태그> 요소(Element) </종류태그>
+
+> 속성(Attribute) : 추가적인 정보나 명령을 받을 수 있게 정보를 전달 
+>> <img src = "html.png"> : scr(속성명), html() 
+
 > HTML, CSS 분리의 장점 
 >> 태그로 Style 속성을 주기 때문에 유지보수, 가독성이 증가
 
