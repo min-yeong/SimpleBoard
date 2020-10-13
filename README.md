@@ -142,8 +142,9 @@ MySQL
 웹 서비스 동작 과정 
 
 <img width="936" alt="캡처" src="https://user-images.githubusercontent.com/58197075/95726449-ea07ef80-0cb3-11eb-80a7-3f33ba6476ab.PNG">
-
-https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html
+- 자원 이용의 효율성 및 장애 극복, 배포 및 유지보수의 편의성 을 위해 Web Server와 WAS를 분리
+- Web Server를 WAS 앞에 두고 필요한 WAS들을 Web Server에 플러그인 형태로 설정하면 더욱 효율적인 분산 처리가 가능
+- 참고 : https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html
 
 https://medium.com/@mikesparr/how-web-applications-work-3824f4b7ebeb - 잘못된 점 찾기
 - DNS서버에서 찾은 IP주소에 해당하는 포트번호로 웹 서버에 접속해야 한다. 
