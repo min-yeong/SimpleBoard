@@ -3,22 +3,15 @@
 ## 개발 환경 구축
 
 XAMPP (X : 크로스 플랫폼, A : 아파치 웹 서버, M : MySQL, PHP, Perl)
-
-- Apache(웹 서버) + MySQL(Database) + PHP(서버 프로그램 언어) 가 한 번에 묶여있는 소프트웨어 </br>
-
+- Apache(웹 서버) + MySQL(Database) + PHP(서버 프로그램 언어) 가 한 번에 묶여있는 소프트웨어<br>
 
 Visual Studio Code 
-
 - 소스 코드 편집기, 디버깅 지원 및 다양한 프로그래밍 언어 지원 
 
-
 MySQL Workbench 8.0 CE
-
 - SQL 개발과 관리, 데이터베이스 설계, 생성 그리고 유지를 위한 단일 개발 통합 환경을 제공하는 비주얼 데이터베이스 설계 도구
 
-
 개발 환경 구축 순서
-
 1. XAMPP 다운로드 
 2. 설치 후, Control Panel를 실행하여 Apache와 MySQL 정상적인 작동 확인 (각 포트 번호 확인)
 3. http://localhost/ 접속하여 정상적으로 작동하는 지 확인
@@ -49,11 +42,9 @@ MySQL Workbench 8.0 CE
 - $cfg['Servers'][$i]['user'] = '유저이름';
 - $cfg['Servers'][$i]['password'] = '유저비밀번호';
 
-
 ## 코드 설명
 
 dbconn.php 
-
 - PHP와 MySQL의 DB 연동
 ```
 <?php
@@ -66,7 +57,6 @@ dbconn.php
 ```
 
 test.php
-
 - db 연동 하는 외부 파일 dbconn.php 실행
 ```
 <?php
@@ -88,7 +78,6 @@ test.php
 ```
 <?php echo $row['테이블 내의 row 변수']?>
 ```
-
 testDB.sql
 
 - 테이블 생성 
