@@ -143,6 +143,10 @@ MySQL
 
 <img width="936" alt="캡처" src="https://user-images.githubusercontent.com/58197075/95726449-ea07ef80-0cb3-11eb-80a7-3f33ba6476ab.PNG">
 
+https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html
+https://medium.com/@mikesparr/how-web-applications-work-3824f4b7ebeb - 잘못된 점 찾기
+- DNS서버에서 찾은 IP주소에 해당하는 포트번호로 웹 서버에 접속해야 한다. 
+
 정적 웹 페이지
 - 서버에 미리 저장된 파일이 그대로 전달되는 웹 페이지
 - 서버는 사용자가 요청에 해당하는 저장된 웹 페이지를 보냄 
@@ -160,6 +164,3 @@ DNS (Domain Name Server)
 localhost
 - 컴퓨터 네트워크에서 사용하는 루프백 호스트 명, 자신의 컴퓨터를 의미함
 - 루프백 : 가상 루프백 인터페이스(자기 자신을 가리키기 위한 목적으로 쓰기 위해 예약된 IP주소) 
-
-https://medium.com/@mikesparr/how-web-applications-work-3824f4b7ebeb - 잘못된 점 찾기
-- DNS서버에서 찾은 IP주소에 해당하는 포트번호로 웹 서버에 접속해야 한다. 
